@@ -8,6 +8,10 @@ import discord
 from discord.ext import commands
 import asyncio
 import ast
+import random
+import aiohttp
+import json
+from discord.ext.commands import Bot
 
 from os import listdir
 from os.path import isfile, join
@@ -27,10 +31,18 @@ if __name__ == '__main__':
         except:
             print ("FAIL#3 bot.load_extension(...)")
             traceback.print_exc()
+                
+            
 """
 @bot.command(name="testo", hidden=True)
 async def testo(ctx,  *args):
     print ("Testing Function")
+    
+@bot.command(pass_context = True, aliases=['throwemout' ])
+async def kick(ctx, userName: discord.User):
+'''establishing a function kick'''
+    await bot.kick(userName)
+ ''' kicking the guy with bot.kick'''       
 
 """OnReady_________"""
 @bot.event
