@@ -38,7 +38,7 @@ if __name__ == '__main__':
 async def testo(ctx,  *args):
     print ("Testing Function")
     
-@bot.command(pass_context = True, aliases=['throwemout' ])
+@bot.command(pass_context = True, aliases=['throwout' ])
 async def kick(ctx, userName: discord.User):
 '''establishing a function kick'''
     await bot.kick(userName)
