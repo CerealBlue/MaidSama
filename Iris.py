@@ -6,6 +6,8 @@
 	Author: IceCereal
 """
 
+print ("Start Iris...")
+
 import discord
 from discord.ext import commands
 
